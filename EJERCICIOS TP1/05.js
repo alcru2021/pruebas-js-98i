@@ -9,5 +9,4 @@ Nota: Tener en cuenta la siguiente función: parseInt
 
 let primerNumero = parseInt(prompt ('Ingreso un numero'));
 let segundNumero = parseInt(prompt ('Ingreso un segundo numero'));
-let resultado = (primerNumero + segundNumero);
-document.write (resultado);
+document.write('El resultado de la suma es ' + (primerNumero + segundNumero))
