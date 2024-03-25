@@ -6,6 +6,5 @@ del usuario con un prompt y escriba un texto
 que diga «Hola nombreUsuario»
 
 */
-
 let  nombreUsuario = prompt('Ingrese su nombre de usuario');
-document.write (nombreUsuario);
+document.write ('Hola ' + nombreUsuario);
