@@ -8,16 +8,17 @@ input: 15 , 3, 9
 Output: El 15 es el número más grande
 */
 
-let num1 = parseInt(prompt ('Ingreso el numero ' + 15));
-let num2 = parseInt(prompt ('Ingreso el numero ' + 3));
-let num3 = parseInt(prompt ('Ingrese el numero ' + 9));
 
 
-function comparar(num1, num2) {
-    if (num1 > num2 && num1 > num3) {
-        return ('El ' + num1 + ' es el numero mas grande');
-    } 
+let num1 = Number(prompt('Ingrese el primer número: '));
+let num2 = Number(prompt('Ingrese el segundo número: '));
+let num3 = Number(prompt('Ingrese el tercer número: '));
+
+
+if (num1 >= num2 && num1 >= num3) {
+    document.write(`El ${num1} es el número más grande.`);
+} else if (num2 >= num1 && num2 >= num3) {
+    document.write(`El ${num2} es el número más grande.`);
+} else {
+    document.write(`El ${num3} es el número más grande.`);
 }
-
-let resultado = comparar(15, 3, 9);
-document.write (resultado);
