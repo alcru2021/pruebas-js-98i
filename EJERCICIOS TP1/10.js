@@ -10,30 +10,16 @@ Output: El 20 es divisible por 2
 
 */
 
-let numero = parseInt(prompt("Ingrese un número: 20"));
+let numero = Number(prompt("Por favor, ingresa un número:"));
 
-// Verifico si el número es divisible por 2
 if (numero % 2 === 0) {
-    document.write("El " + numero + " es divisible por 2.<br>")
-}
-
-// Verifico si el número es divisible por 3
-if (numero % 3 === 0) {
-    document.write("El " + numero + " es divisible por 3.<br>");
+    document.write(numero + " es divisible por 2.");
+} else if (numero % 3 === 0) {
+    document.write(numero + " es divisible por 3.");
+} else if (numero % 5 === 0) {
+    document.write(numero + " es divisible por 5.");
+} else if (numero % 7 === 0) {
+    document.write(numero + " es divisible por 7.");
 } else {
-    document.write("El " + numero + " no es divisible por 3.<br>");
-}
-
-// Verifico si el número es divisible por 5
-if (numero % 5 === 0) {
-    document.write("El " + numero + " es divisible por 5.<br>");
-} else {
-    document.write("El " + numero + " no es divisible por 5.<br>");
-}
-
-// Verifico si el número es divisible por 7
-if (numero % 7 === 0) {
-    document.write("El " + numero + " es divisible por 7.<br>");
-} else {
-    document.write("El " + numero + " no es divisible por 7.<br>");
+    document.write(numero + " no es divisible por 2, 3, 5 ni 7.");
 }
